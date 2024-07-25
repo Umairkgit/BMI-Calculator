@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar {
+            width: 100%;
+            height: 70px;
+            background-color: #91FC09;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .logo img {
+            width: 175px;
+            height: 85px;
+            margin-left: 30px;
+        }
+
+        .nav-links ul {
+            display: flex;
+            gap: 55px;
+            margin-right: 50px;
+            position: relative;
+            cursor: pointer;
+            list-style: none;
+            font-weight: 900;
+            text-shadow: 2px 2px #ffffff;
+        }
+
+        .nav-links a {
+            position: relative;
+            text-decoration: none;
+            color: black;
+        }
+
+        .nav-links a::after {
+            content: "";
+            position: absolute;
+            height: 3px;
+            bottom: -5px;
+            width: 100%;
+            left: 0;
+            background-color: black;
+            transition: 0.3s;
+            transition-timing-function: ease-in-out;
+            transform: scale(0);
+        }
+
+        .nav-links a:hover::after {
+            transform: scale(1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Inter", sans-serif;
+        }
+
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+
+            background-color: #f0f6e6;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 20px;
+            margin: 10px auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        section h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+
+        section p {
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+
+        h1 {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            /* background-color: black;
+            color: white; */
+            border-radius: 20px;
+            width: 50vw;
+            margin: 20px auto;
+        }
+
+        img {
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="">
+        </div>
+
+        <div class="nav-links">
+            <ul>
+                <a href="index.html">Home</a>
+                <a href="">About</a>
+                <a href="privacy.html">Privacy Policy</a>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="about_img">
+        <!-- <img src="about.png" alt=""> -->
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>About Us</h1>
+        </header>
+        <section>
+            <p>Welcome to <strong>BMI Calculator Hub</strong>, your go-to source for understanding and managing your
+                Body Mass Index (BMI) in a simple, effective, and user-friendly way. Our mission is to provide you with
+                accurate tools and information to help you monitor your health and wellness journey.</p>
+        </section>
+        <section>
+            <h2>Who We Are</h2>
+            <p>At BMI Calculator Hub, we are a team of health enthusiasts, developers, and nutrition experts dedicated
+                to making health information accessible to everyone. We believe that understanding your BMI is the first
+                step towards achieving a healthier lifestyle. Our team combines expertise in health science with
+                advanced technology to create an intuitive platform that empowers you to take control of your health.
+            </p>
+        </section>
+        <section>
+            <h2>What We Do</h2>
+            <p>Our primary offering is a comprehensive and easy-to-use BMI calculator. We designed this tool to help you
+                quickly and accurately determine your BMI, which is a crucial indicator of your overall health. In
+                addition to the calculator, we provide a wealth of resources, including:</p>
+            <ul>
+                <li><strong>Educational Articles</strong>: In-depth articles and guides on BMI, its significance, and
+                    how to maintain a healthy BMI.</li>
+                <li><strong>Health Tips</strong>: Practical advice and tips on nutrition, exercise, and lifestyle
+                    changes to improve your BMI.</li>
+                <li><strong>Personalized Insights</strong>: Customized recommendations based on your BMI results to help
+                    you achieve your health goals.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Why Choose Us?</h2>
+            <p><strong>Accuracy</strong>: Our calculator uses the latest algorithms and health standards to ensure
+                precise results.</p>
+            <p><strong>User-Friendly Interface</strong>: Our platform is designed with simplicity in mind, making it
+                easy for anyone to use, regardless of their technical expertise.</p>
+            <p><strong>Reliable Information</strong>: All our content is thoroughly researched and reviewed by health
+                professionals to ensure accuracy and relevance.</p>
+            <p><strong>Privacy and Security</strong>: We value your privacy. All your data is securely handled and never
+                shared without your consent.</p>
+        </section>
+        <section>
+            <h2>Our Commitment</h2>
+            <p>At BMI Calculator Hub, we are committed to supporting you on your health journey. We continuously update
+                our tools and resources to reflect the latest in health and wellness research. Your feedback is
+                invaluable to us, and we strive to improve our services based on your needs.</p>
+            <p>Thank you for choosing BMI Calculator Hub. Let's take the first step towards a healthier you together!
+            </p>
+        </section>
+
+    </div>
+
+</body>
+
+</html>
